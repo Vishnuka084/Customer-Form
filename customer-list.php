@@ -15,5 +15,30 @@
 </head>
 <body>
 
+<div class="container">
+    <br>
+    <h4>Customer Form</h4>
+    <hr>
+
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>Nic</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Salary</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Nic</td>
+            <td>Name</td>
+            <td>Address</td>
+            <td>Salary</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
 </body>
 </html>

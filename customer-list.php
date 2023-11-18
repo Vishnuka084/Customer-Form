@@ -37,7 +37,7 @@
                 while ($raw=mysqli_fetch_assoc($result)){
                     $nic =  $raw['nic'];
                     $name =  $raw['name'];
-                    $address =  $raw['$address'];
+                    $address =  $raw['address'];
                     $salary =  $raw['salary'];
 
                     echo '

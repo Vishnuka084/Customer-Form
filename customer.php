@@ -13,17 +13,35 @@
     <form>
         <div class="container">
 
+            <h4>Customer Form</h4>
+            <hr>
 
             <div class="row">
                 <div class="col-3">
                     <div class="form-group">
                         <label for="nic">NIC</label>
-                        <input type="text" name="nic" id="nic" class="form-controller">
+                        <input type="text" name="nic" id="nic" class="form-control" required>
                     </div>
                 </div>
-                <div class="col-3"></div>
-                <div class="col-3"></div>
-                <div class="col-3"></div>
+                <div class="col-3">
+                    <div class="form-group">
+                        <label for="nic">Name</label>
+                        <input type="text" name="name" id="name" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="form-group">
+                        <label for="nic">Address</label>
+                        <input type="text" name="address" id="address" class="form-control" required>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group">
+                        <label for="nic">Salary</label>
+                        <input type="text" name="salary" id="salary" class="form-control" required>
+                    </div>
+                </div>
             </div>
         </div>
     </form>

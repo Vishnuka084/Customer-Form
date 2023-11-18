@@ -1,6 +1,5 @@
 <?php
     include 'header.php';
-    include 'customer-list.php';
     include 'mysql_connect.php';
 
     if (isset($_POST['submit'])){

@@ -32,7 +32,7 @@
 </head>
 <body>
 
-    <form method="post">
+    <form method="post" action="customer.php">
         <div class="container">
 
             <br>
@@ -68,7 +68,7 @@
 
                 <div class="col-12">
                     <br>
-                    <button type="submit" class="btn btn-primary col-12">Save Customer</button>
+                    <button type="submit" name="submit" class="btn btn-primary col-12">Save Customer</button>
 
                 </div>
             </div>

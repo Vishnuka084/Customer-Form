@@ -48,7 +48,7 @@
                             <td>'.$address.'</td>
                             <td>'.$salary.'</td>
                             <td>
-                                <a href="" class="btn btn-success btn-sm">Updated</a>
+                                <a href="customer-update.php?customerNic='.$nic.'" class="btn btn-success btn-sm">Updated</a>
                                 <a href="customer-delete.php?customerNic='.$nic.'" class="btn btn-danger btn-sm">Delete</a>
                             </td>
                         </tr>

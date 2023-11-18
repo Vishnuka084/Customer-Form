@@ -13,6 +13,7 @@
     <form>
         <div class="container">
 
+            <br>
             <h4>Customer Form</h4>
             <hr>
 
@@ -39,8 +40,14 @@
                 <div class="col-3">
                     <div class="form-group">
                         <label for="nic">Salary</label>
-                        <input type="text" name="salary" id="salary" class="form-control" required>
+                        <input type="number" name="salary" id="salary" class="form-control" required>
                     </div>
+                </div>
+
+                <div class="col-12">
+                    <br>
+                    <button type="submit" class="btn btn-primary col-12">Save Customer</button>
+
                 </div>
             </div>
         </div>

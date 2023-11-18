@@ -30,12 +30,29 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <td>Nic</td>
-            <td>Name</td>
-            <td>Address</td>
-            <td>Salary</td>
-        </tr>
+        <?php
+            $sql = "SELECT * FROM customer";
+            $result = mysqli_query($con,$sql);
+            if ($result){
+                while ($raw=mysqli_fetch_assoc($result)){
+                    $nic =  $raw['nic'];
+                    $name =  $raw['name'];
+                    $address =  $raw['$address'];
+                    $salary =  $raw['salary'];
+
+                    echo '
+                        <tr>
+                            <td>'.$nic.'</td>
+                            <td>'.$name.'</td>
+                            <td>'.$address.'</td>
+                            <td>'.$salary.'</td>
+                        </tr>
+                    ';
+                }
+            }
+
+        ?>
+
         </tbody>
     </table>
 </div>

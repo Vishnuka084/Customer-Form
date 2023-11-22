@@ -4,6 +4,15 @@ include 'mysql_connect.php';
 
 
 $requestNic=$_GET['customerNic'];
+$query = "SELECT * FROM customer WHERE nic='$requestNic'";
+$selectedCustomer = mysqli_query($con , $sql);
+$raw=mysqli_fetch_assoc($selectedCustomer);
+    $selectedNic = $raw['nic'];
+    $selectedName = $raw['name'];
+    $selectedAddress = $raw['address'];
+    $selectedSalary = $raw['salary'];
+
+
 
 if (isset($_POST['submit'])){
     $name  = $_POST['name'];
@@ -43,14 +52,14 @@ if (isset($_POST['submit'])){
         <div class="row">
             <div class="col-3">
                 <div class="form-group">
-                    <label for="nic">Name</label>
+                    <label for="name">Name</label>
                     <input type="text" name="name" id="name" class="form-control" required>
                 </div>
             </div>
 
             <div class="col-3">
                 <div class="form-group">
-                    <label for="nic">Address</label>
+                    <label for="address">Address</label>
                     <input type="text" name="address" id="address" class="form-control" required>
                 </div>
             </div>
